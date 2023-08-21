@@ -387,6 +387,72 @@ section{
     line-height: 1.7;
 }
 
+/* new */
+
+
+
+
+.about .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2rem;
+}
+
+.about .content p{
+    color:var(--text-color-2);
+    font-size: 1.7rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+
+
+
+.about .row .image {
+	flex: 1 1 40rem;
+}
+
+.about .row .image img {
+	width: 100%;
+}
+
+.about .row form {
+	flex: 1 1 40rem;
+	border: 0.1rem solid var(--primary-color);
+	padding: 2rem;
+}
+
+.about .row form h3 {
+	font-size: 2.5rem;
+	color: #444;
+	padding-bottom: 1rem;
+}
+
+.about .row form .box {
+	width: 100%;
+	font-size: 1.6rem;
+	padding: 1.2rem 1.4rem;
+	border: .1rem solid var(--primary-color);
+	margin: .7rem 0;
+}
+
+.about .row form .box:focus {
+	color: var(--primary-color);
+}
+
+.about .row form textarea {
+	height: 15rem;
+	resize: none;
+}
+
+
+
+/*ends*/
+
+
+
+
+
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
