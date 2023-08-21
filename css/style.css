@@ -266,7 +266,7 @@ section{
 
 .home .image img{
     width: 100%;
-    height: 45rem;
+    height: 80rem;
 
 }
 
@@ -443,6 +443,11 @@ section{
 .about .row form textarea {
 	height: 15rem;
 	resize: none;
+}
+
+.image h3{
+    color:var(--text-color-1);
+    font-size: 4rem;
 }
 
 
