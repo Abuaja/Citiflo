@@ -162,7 +162,7 @@
             <input type="text" placeholder="Phone no" id="phone" required>
         </div>
         <div class="checker">
-            <input type="checkbox" name="yesorno" id="checkbox" required><p>Fragile items or exclusive documents are included in the shipment.</p>
+            <input type="checkbox" name="yesorno" id="checkbox"><p>Fragile items or exclusive documents are included in the shipment.</p>
         </div>
         <div><p class="order">Click the Order Now button to generate price</p></div>
 
@@ -364,16 +364,16 @@
         Body : "Name: " + document.getElementById("name").value 
         + "<br> Email: " + document.getElementById("email").value
         + "<br> Phone no: " + document.getElementById("phone").value
-        // + "<br> Shipping as a/an: " +document.getElementById("shipping").value
-        // + "<br> from: " +document.getElementById("from").value+ "<br> to: " +document.getElementById("to").value
-        // + "<br> vehicle type: " +document.getElementById("vehicle").value+ "<br> Weight: " + document.getElementById("weight").value
-        // + "<br> Width: " +document.getElementById("width").value
-        // + "<br> length/height: " +document.getElementById("height").value 
-        // + "<br> quantity: " +document.getElementById("quantity").value
-        // + "<br> size of package: " +document.getElementById("size").value
-        // + "<br> Email: " +document.getElementById("email").value
+        + "<br> Shipping as a/an: " +document.getElementById("shipping").value
+        + "<br> from: " +document.getElementById("from").value+ "<br> to: " +document.getElementById("to").value
+        + "<br> vehicle type: " +document.getElementById("vehicle").value+ "<br> Weight: " + document.getElementById("weight").value
+        + "<br> Width: " +document.getElementById("width").value
+        + "<br> length/height: " +document.getElementById("height").value 
+        + "<br> quantity: " +document.getElementById("quantity").value
+        + "<br> size of package: " +document.getElementById("size").value
+        + "<br> Email: " +document.getElementById("email").value
 }).then(
-  message => alert(" Message Sent Successfully")
+  message => alert(" Message Sent Successfully expect a mail asap")
 );
     }
 </script>
