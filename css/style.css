@@ -360,10 +360,19 @@ button{
     font-size: 1.2rem;
     background: green;
     color: white;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
 }
 
+button.partnerone{
+    width: 40%;
+    height: 3.6rem;
+    background: red;
+}
+
+button.partnerotwo{
+    width: 45%;
+    height: 3.6;
+    background: blue;
+}
 
 
 
