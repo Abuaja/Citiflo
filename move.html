@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body>
+
+    <!-- <header>
+        <div class="nav"><img src="./images/logo.png" alt="" width="150" height="85"></div>
+        <div class="subnav">
+            
+        </div>
+    </header> -->
+    <!-- header section starts  -->
+<div class="navholder">
+<header class="header">
+
+    <a href="index.html" class="logo"> <img src="images/Black logo - no background.png" alt="logo" width="140" height="80" id="logo"></a>
+
+    <div class="links">
+        <a href="index.html"><div class="link">Home</div></a>
+        <div class="link">About us</div>
+        <div class="link">sign in</div>
+
+    </div>
+
+</header>
+<div class="subnav">
+    <p>Customer service</p>
+    <a href="#partner"><button class="partnerone">Partner with us</button></a>
+</div>
+</div>
+
+<div class="popup" id="partner">
+    <div class="pop"></div>
+</div>
+
+
+
+<!-- hero -->
+    <section class="deal" data-aos="fade-up">
+        <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="info">
+            <h1>Move Package(s) Now</h1>
+            <p>We can provide you with rapid delivery choices for your local shipping needs for any package, both pallets of any size. Fill out the form below with your delivery details, and we will deliver products targeted to your individual needs. Simply choose the best choice for you and proceed to book.</p>
+        </div>
+
+        <div class="box">
+            <h1>1. ENTER ORIGIN AND DESTINATION</h1>
+            <p>I am shipping as a/an...</p>
+            <!-- <div class="h">
+                <div class="b1">INDIVIDUAL</div>
+                <div class="b2">BUSINESS</div>
+
+            </div> -->
+                <select name="" id="shipping" required style="border: 0.5px solid black;">
+                <option value="">Select type</option>
+                <option value="individual">Individual</option>
+                <option value="business">Business</option>
+            </select> <br>
+            
+            <div class="locate">
+                <div class="loc1">
+                    <div class="up"><img src="./images/image 1Country.png" alt="" width="120" height="60"></div>
+                    <div class="down"><p>This is the country where you will be charged.</p></div>
+                </div>
+                <div class="loc2">
+                    <div class="up2">
+                        <div class="left"><p>from</p></div><input type="text" name="" id="from" placeholder="State/City" required>
+                        <!-- <div class="right"></div> -->
+                    </div>
+                    <div class="down">
+                        <div class="left"><p>to</p></div> <input type="text" name="" id="to"placeholder="State/City" required>
+                        <!-- <div class="right"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h1>2. DETAILS ABOUT YOUR DELIVERY</h1>
+            <p>Vehicle type</p> <select name="" id="vehicle" required style="border: 0.5px solid black;">
+                <option value="Auto">Automatically assign for me</option>
+                <option value="Individual">Individual</option>
+                <option value="Bike">Bike</option>
+                <option value="Van">Van</option>
+                <option value="Trailer">Trailer</option>
+            </select>
+            <br><br>
+            <p>The weight and dimensions you provide will enable ascertain the type of vehicle that suits your shipping/delivery</p>
+
+            <br>
+            <div class="spew">
+        <div>
+            <p>Weight</p><input type="number" name="" id="weight" placeholder="in kg" required>
+            
+            <p class="note">Give the average weight for each items</p>
+        </div>
+            <img src="./images/image 1Weight.png" alt="" width="140" height="120">
+            <div>
+                <p>Dimension</p><input type="number" name="" id="width" placeholder="Enter width in cm" required> <p style="text-align: center;">X</p><input type="number" name="" id="height" placeholder="Enter length/height in cm" required>
+            </div>
+            <div>
+                <p>Quantity</p><input type="number" name="" id="quantity" placeholder="Enter quantity" required>
+            </div>
+
+        </div>
+        <p></p>
+        </div>
+
+        <div class="box">
+            <h1>Not sure about the size?</h1>
+            <div class="sizes">
+                <div class="s1">
+                    <img src="./images/image 1A4 Envelope.png" alt="" width="120" height="120">
+                    <div class="sizetype">
+                        <h3>A3, A4, A5 Envelope</h3>
+                        <p>29.7 x 42 x 1 cm</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <img src="./images/image 1shoe box size.png" alt="" width="120" height="100">
+                    <div class="sizetype">
+                        <h3>Shoes box size</h3>
+                        <p>35 x 20 x 12 cm</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <img src="./images/image 1Moving box size.png" alt="" width="120" height="100">
+                    <div class="sizetype">
+                        <h3>Moving box size</h3>
+                        <p>80 x 35 x 30 cm</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <img src="./images/image 1Weight.png" alt="" width="140" height="120">
+                    <div class="sizetype">
+                        <h3>Multiple shipment</h3>
+                        <p>L x B x H cm</p>
+                    </div>
+                </div>
+
+            </div>
+            <input type="text" name="" id=" size" placeholder="input choice of size" required> <br> <br>
+            <input type="text" placeholder="enter name" id="name" required> <br> <br>
+            <input type="email" placeholder="email" id="email" required> <br> <br>
+            <input type="text" placeholder="Phone no" id="phone" required>
+        </div>
+        <div class="checker">
+            <input type="checkbox" name="yesorno" id="checkbox" required><p>Fragile items or exclusive documents are included in the shipment.</p>
+        </div>
+        <div><p class="order">Click the Order Now button to generate price</p></div>
+
+        <input type="submit" value="Order" >
+    </form>
+    </section>
+
+
+ <!-- hero ends -->
+
+
+
+
+
+<div class="testimonial"><p>Check out these testimonials from our Clients</p></div>
+
+
+
+
+
+
+
+
+
+<!-- review -->
+    <section class="review" id="review">
+    
+        <div class="swiper-container review-slider" data-aos="zoom-out">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide slide">
+                    <img src="images/p2.png" alt="">
+                    <h3>Abali Ebuka</h3>
+                    <p>I use Citiflo for delivering my handmade palms to my customers, all spread across Lagos. And they have never dissapointed me. Citiflo rocks!...</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <img src="images/p2.png" alt="">
+                    <h3>Prosper Ifedigbo</h3>
+                    <p>I remember when I had an exam by 2pm, reaching school I discovered I had forgotten my examination slip. All I did was log on to the app and I found a willing delivery agent that got my slip to me in less than an hour, and also at a much cheaper price than what I would have spent going to get it myself. Thank you Citiflo for this initiative.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <img src="images/p1.png" alt="">
+                    <h3>Amarachi Okonkwo</h3>
+                    <p>Very impressive app. Used it and I got hooked, it has made my life as a cloth vendor to really easy. I love the app i'll encourage you to use the app if you are a business woman or man.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <img src="images/p2.png" alt="">
+                    <h3>Adekunle Ajayi</h3>
+                    <p>I had doubts at first because of my experiences with logistic companies, but this actually convinced me that good companies with amazing services still exist.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="swiper-pagination"></div>
+    
+        </div>
+    
+    </section>
+    
+<!-- review section ends -->
+
+
+
+
+
+
+
+<!-- newsletter -->
+<div class="testimonial"><p>STAY UP TO DATE?</p></div>
+
+<p class="pointer">Yes! Send me exclusive offers and personalized tips for Logistics on Citiflo.</p>
+
+    <div class="subscribe">
+        <input type="email" name="" id="" placeholder="Enter your email">
+        <button>subscribe</button>
+    </div>
+
+<!-- newsletter ends -->
+    
+
+
+
+
+ 
+
+
+<!-- footer -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up">
+            <h3>Our branche(s)</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Nigeria </a>
+            <!-- <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> canada </a> -->
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>Quick links</h3>
+            <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="#review"> <i class="fas fa-chevron-right"></i> review </a>
+            <a href="#contact"> <i class="fas fa-chevron-right"></i> contact </a>
+        
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>Contact info</h3>
+            <a href="https://wa.link/xy06v8"> <i class="fab fa-whatsapp"></i> +234 8166 268 045 </a>
+            <a href="mailto:danielokpata@yahoo.com "> <i class="fas fa-envelope"></i> danielokpata@yahoo.com </a>
+            <a><i class="fas fa-map-marker-alt"></i> Musterpoint, No 1,Adekunle Owobiyi, Ogba Ikeja,Lagos,Nigeria.</a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>Follow us</h3>
+<!--             <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a> -->
+            <a href="https://twitter.com/_citiflo?t=1SRGw4peiZw-KblwLv7XGg&s=09" target="_blank"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://instagram.com/citiflo_solutions?igshid=NTc4MTIwNjQ2YQ==" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/in/citiflo-solutions-930235264/" target="_blank"> <i class="fab fa-linkedin"></i> linkedin </a>
+<!--             <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a> -->
+            
+        <a href="#downloadapp"><input type="submit" value="Explore" class="btn"></a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>Citiflo Solutions</span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "abuajaikenna@gmail.com",
+        Password : "7021530DBD405F9AA7A794806C543E315702",
+        To : 'abuajacollins@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New move packages quotation",
+        Body : "Name: " + document.getElementById("name").value 
+        // + "<br> Email: " + document.getElementById("email").value
+        // + "<br> Phone no: " + document.getElementById("phone").value
+        // + "<br> Shipping as a/an: " +document.getElementById("shipping").value
+        // + "<br> from: " +document.getElementById("from").value+ "<br> to: " +document.getElementById("to").value
+        // + "<br> vehicle type: " +document.getElementById("vehicle").value+ "<br> Weight: " + document.getElementById("weight").value
+        // + "<br> Width: " +document.getElementById("width").value
+        // + "<br> length/height: " +document.getElementById("height").value 
+        // + "<br> quantity: " +document.getElementById("quantity").value
+        // + "<br> size of package: " +document.getElementById("size").value
+        // + "<br> Email: " +document.getElementById("email").value
+}).then(
+  message => alert(" Message Sent Successfully")
+);
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+
+AOS.init({
+    duration:800,
+    delay:400
+});
+
+</script>
+
+</body>
+</html>
