@@ -1,0 +1,226 @@
+.deal{
+    width: 100%;
+    height: fit-content;
+    margin: 25rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.info{
+    width: 80%;
+    height: fit-content;
+    text-align: center;
+}
+
+#email{
+    width: 35rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: none;
+}
+.info h1{
+    font-size: 2.6rem;
+}
+.info p{
+    font-size: 1.5rem;
+}
+
+.box{
+    width: 100%;
+    height: fit-content;
+}
+
+.box h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.box p{
+    font-size: 1.3rem;
+    color: orange;
+}
+
+.h{
+    width: 20rem;
+    height: 2.5rem;
+    background: rgb(204, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 3rem;
+}
+.b1{
+    width: 10rem;
+    height: 2.5rem;
+    background: green;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+.b2{
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.locate{
+    width: 70%;
+    height: 20rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.loc1{
+    border: .1rem solid rgba(117, 116, 116, 0.623);
+    width: 50%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.2rem;
+}
+
+.loc2{
+    width: 50%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.2rem;   
+}
+
+
+.up, .down{
+    width: 100%;
+    height: 10rem;
+    /* background:red; */
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.down p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.up{
+    border-bottom: .1rem solid black;
+}
+.up2{
+    border-bottom: none;
+}
+
+.up p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.up2 p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+input{
+    width: 35rem;
+    height: 4rem;
+    padding-left: 1.8rem;
+    border: .1rem solid rgba(117, 116, 116, 0.623);
+}
+
+
+
+.sizes{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.s1{
+width: 23%;
+height: 20rem;
+background:white;
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+box-shadow: 0 .2rem .7rem rgb(90, 90, 90);
+}
+
+.spew{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.spew p{
+    color: black;
+}
+
+.note::after{
+    content: "*";
+}
+
+
+
+.spew input{
+    width: 20rem;
+}
+
+.checker{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    
+    
+}
+
+.checker p{
+    font-size: 1.4rem;
+}
+.order{
+    font-size: 1.4rem;
+}
+
+input[type="checkbox"]{
+    width: 1em;
+    height:1em;
+}
+input[type="submit"]{
+    background: green;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background: orange;
+    transition: .5s ease-in-out;
+}
